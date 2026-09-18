@@ -26,7 +26,7 @@ node --version
 克隆仓库，进入项目目录，然后安装锁定版本的依赖：
 
 ```powershell
-git clone <PRIVATE_REPOSITORY_URL>
+git clone https://github.com/simonsFeng/logitstoken-image-mcp.git
 Set-Location .\logitstoken-image-mcp
 npm.cmd ci
 ```
@@ -126,4 +126,3 @@ Image 1 did not contain the expected data[].b64_json field.
 git pull
 npm.cmd ci
 ```
-
