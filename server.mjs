@@ -139,7 +139,7 @@ function mimeTypeForImage(filePath) {
 
 const server = new McpServer({
   name: "logitstoken-image",
-  version: "1.0.0",
+  version: "1.0.1",
 });
 
 server.registerTool(
@@ -224,6 +224,7 @@ server.registerTool(
     form.set("prompt", prompt);
     form.set("size", size);
     form.set("quality", quality);
+    form.set("response_format", "b64_json");
 
     if (aspect_ratio) {
       form.set("aspect_ratio", aspect_ratio);
